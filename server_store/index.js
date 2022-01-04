@@ -2,15 +2,17 @@
 const express = require('express');
 require('dotenv').config();
 
+const Router= require('./routes/api_Routes')
+
 
 const app = express();
-const port = 3000;
+const port = 5000;
 
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-app.use("/api",apiSqlRouter);
+app.use("/api", Router);
 
 
 
