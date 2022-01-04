@@ -1,0 +1,70 @@
+-- Querys to create DB
+
+-- CREATE DATABASE server_Store
+
+-- CREATE TABLE suppliers
+-- (id_supplier SERIAL NOT NULL PRIMARY KEY,
+--  supplier_name VARCHAR(100) NOT NULL,
+--  cif VARCHAR(10) NOT NULL,
+--  adress VARCHAR(50) NOT NULL
+--  );
+
+-- CREATE TABLE items
+-- (id_item SERIAL NOT NULL PRIMARY KEY,
+--  item_name VARCHAR(100) NOT NULL,
+--  rate INT NOT NULL,
+--  category VARCHAR(50) NOT NULL,
+--  price INT NOT NULL,
+--  id_supplier INT,
+-- FOREIGN KEY(id_supplier) REFERENCES suppliers(id_supplier)
+-- );
+
+-- INSERT INTO suppliers(supplier_name, cif, adress) 
+--                                         VALUES ('Nindemand', 'N-00000064','Avda. Hermanos Tuberías')
+-- INSERT INTO items(item_name, rate,category, price, id_supplier) 
+--                                         VALUES ('Break Bandicout', 4.5, 'videogame',59.99, 1);
+
+
+
+
+-- INSERT INTO items(item_name, rate,category, price, id_supplier) 
+--                                         VALUES ('Figure Evils Souls', 1.3, 'merchandising', 49.99, 1);
+-- INSERT INTO items(item_name, rate,category, price, id_supplier) 
+--                                         VALUES ('Poster Clank&Daxter', 4.1, 'merchandising', 14.99, 1);
+-- INSERT INTO items(item_name, rate,category, price, id_supplier) 
+--                                         VALUES ('Figure Clank&Daxter: Clank', 4, 'merchandising', 24.99, 1);
+-- INSERT INTO items(item_name, rate,category, price, id_supplier) 
+--                                         VALUES ('Figure Clank&Daxter: Daxter', 3.9, 'merchandising', 24.99, 1);
+-- INSERT INTO items(item_name, rate,category, price, id_supplier) 
+--                                         VALUES ('Poster Shadow of the Titans', 5, 'merchandising', 14.99, 1);
+-- INSERT INTO items(item_name, rate,category, price, id_supplier) 
+--                                         VALUES ('Figure Purple Little Dragon', 4.3, 'merchandising', 24.99, 1);
+-- INSERT INTO items(item_name, rate,category, price, id_supplier) 
+--                                         VALUES ('Figure Break Bandicoot', 2.3, 'merchandising', 24.99, 1);
+										
+-- INSERT INTO items(item_name, rate,category, price, id_supplier) 
+--                                         VALUES ('Figure Horn 3: Master', 4, 'merchandising', 20.99, 2);
+-- INSERT INTO items(item_name, rate,category, price, id_supplier) 
+--                                         VALUES ('Poster Edades Mitologicas: Egypt', 3.7, 'merchandising', 12.99, 2);
+-- INSERT INTO items(item_name, rate,category, price, id_supplier) 
+--                                         VALUES ('Poster Edades Mitologicas: Greece', 3.1, 'merchandising', 12.99, 2);
+-- INSERT INTO items(item_name, rate,category, price, id_supplier) 
+--                                         VALUES ('Poster Edades Mitologicas: Nordic', 4.9, 'merchandising',12.99, 2);
+-- INSERT INTO items(item_name, rate,category, price, id_supplier) 
+--                                         VALUES ('Figure Warriortoad', 4, 'merchandising', 20.99, 2);
+-- INSERT INTO items(item_name, rate,category, price, id_supplier) 
+--                                         VALUES ('Figure Arpa-kazooie: Arpa', 4.5, 'merchandising',20.99, 2);
+-- INSERT INTO items(item_name, rate,category, price, id_supplier) 
+--                                         VALUES ('Figure Arpa-kazooie: Kazooie', 3.2, 'merchandising', 20.99, 2);
+										
+-- INSERT INTO items(item_name, rate,category, price, id_supplier) 
+--                                         VALUES ('Figure Luminic', 4.5, 'merchandising', 29.99, 3);
+-- INSERT INTO items(item_name, rate,category, price, id_supplier) 
+--                                         VALUES ('Poster Plant Crossing', 4.4, 'merchandising', 9.99, 3);
+-- INSERT INTO items(item_name, rate,category, price, id_supplier) 
+--                                         VALUES ('Figure Jaula: Enlace', 4.5, 'merchandising', 29.99, 3);
+-- INSERT INTO items(item_name, rate,category, price, id_supplier) 
+--                                         VALUES ('Figure Jaula: Mascara Mayor', 3, 'merchandising',19.99, 3);
+-- INSERT INTO items(item_name, rate,category, price, id_supplier) 
+--                                         VALUES ('Poster Cosamon: Salón edition', 4.5, 'merchandising',9.99, 3);
+-- INSERT INTO items(item_name, rate,category, price, id_supplier) 
