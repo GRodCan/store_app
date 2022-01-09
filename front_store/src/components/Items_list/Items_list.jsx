@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
-import { cartContext } from "../../context/listContext";
+import { Link } from "react-router-dom";
+import { cartContext } from "../../context/cartContext";
 import Item from "../Item/Item";
 
 const Items_list = ({items}) => {
@@ -16,21 +17,21 @@ const Items_list = ({items}) => {
       newCart=cart.map(element=>{
         if (id_item===element.id_item){
           let n=element.many
-          console.log(n)
+          
           newItem.many=n+1
-          console.log(newItem)
+          
           return newItem
         }
         return element
     })
     : newCart=cart.concat(item);
-    console.log(newCart)
+    
     setCart(newCart)
   }
   
-
+  // <div onClick={()=>addToCart(element)} key={i}>
   return <div>
-    {items.map((element,i)=><div onClick={()=>addToCart(element)} key={i}><Item data={element} /></div>)}
+    {items.map((element,i)=><Link to={`/item?item=${element.id_item}`} key={i}><Item data={element} list={true}/></Link>)}
   </div>;
 };
 
