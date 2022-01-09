@@ -1,12 +1,14 @@
 // Server
 const express = require('express');
 require('dotenv').config();
+const cors = require("cors")
 
 const Router= require('./routes/api_Routes')
 
 
 const app = express();
 const port = 5000;
+app.use(cors());
 
 
 app.use(express.urlencoded({ extended: false }));
