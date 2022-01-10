@@ -6,7 +6,7 @@ import Products from "../Products"
 import Cart from "../Cart"
 import Suppliers_list from "../Suppliers_list/Suppliers_list";
 import Item_info from "../Item_info/Item_info";
-
+import './Main.css'
 import useQuery from '../../hooks/useQuery';
 
 

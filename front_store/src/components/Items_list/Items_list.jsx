@@ -29,9 +29,14 @@ const Items_list = ({items}) => {
     setCart(newCart)
   }
   
-  // <div onClick={()=>addToCart(element)} key={i}>
+  
   return <div>
-    {items.map((element,i)=><Link to={`/item?item=${element.id_item}`} key={i}><Item data={element} list={true}/></Link>)}
+    {items.map((element,i)=><div className="item" key={i}>
+      <Link to={`/item?item=${element.id_item}`} >
+        <Item data={element} list={true} add={addToCart}/>
+      </Link>
+      <button onClick={()=>addToCart(element)} key={i}>Añadir al carro</button>
+    </div>)}
   </div>;
 };
 

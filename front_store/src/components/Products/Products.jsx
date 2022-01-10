@@ -23,6 +23,7 @@ const [sortPrice, setSortPrice] = useState(null)
 const [filter, setFilter] = useState("")
 const [categories, setCategories] = useState([])
 const [page, setPage] = useState(10)
+const [input, setInput] = useState("")
 
   useEffect(async() => {    
     const dataProducts= await axios.get("http://localhost:5000/api/items")
@@ -48,6 +49,20 @@ const [page, setPage] = useState(10)
     }
     setFilter(changeFilter.current[i].value)
   }
+
+  const debouncedSearchTerm = useDebounce(input, 1000);
+  const handleChange_Text = event => setInput(event.target.value)
+  useEffect(async() => {
+      if (debouncedSearchTerm) {
+          setFilter("name")
+          const dataProducts= await axios.get("http://localhost:5000/api/items")
+          const resProducts= await dataProducts.data.items
+          const results=resProducts.filter((element)=>element.item_name.includes(debouncedSearchTerm))
+          console.log(results);
+          setProducts(results)
+        }
+
+      },[debouncedSearchTerm]);
 
   const searchCategory=async(category)=>{
     const data= await axios.get(`http://localhost:5000/api/items/category/${category}`)
@@ -93,9 +108,12 @@ const [page, setPage] = useState(10)
         
       }
 
+    <input type="text" name="input" id="input" onChange={handleChange_Text} value={input} placeholder='Ej. "Earphones"'/>
+
     </section>
     <br />
     <br />
+    
     <br />
 
     

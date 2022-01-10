@@ -1,10 +1,16 @@
-import React from "react";
-import Nav from "../Nav";
+import React, { useState } from "react";
+
+import NavBar from "../NavBar";
+import "./Header.css"
 
 const Header = () => {
+  
+  
+
   return <header>
-    <Nav/>
-  </header>;
+    
+    <NavBar/>
+    </header>;
 };
 
 export default Header;
