@@ -1,0 +1,7 @@
+@media (max-width: 768px) {
+    header{width: 110%}
+  }
+header{
+    background-color: yellowgreen;
+    
+}
