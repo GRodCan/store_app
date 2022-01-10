@@ -2,8 +2,6 @@
 const express = require('express');
 require('dotenv').config();
 
-const Router= require('./routes/api_Routes')
-
 
 const app = express();
 const port = 5000;
