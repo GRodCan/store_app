@@ -1,14 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 
 import NavBar from "../NavBar";
 import "./Header.css"
 
 const Header = () => {
-  
-  
-
-  return <header>
-    
+  return <header>    
     <NavBar/>
     </header>;
 };

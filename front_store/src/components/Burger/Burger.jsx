@@ -3,8 +3,7 @@ import styled from 'styled-components';
 import Nav from '../Nav';
 
 
-const StyledBurger = styled.div`
-  
+const StyledBurger = styled.div` 
   width: 2.5rem;
   height: 2.5rem;
   position: fixed;

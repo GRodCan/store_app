@@ -1,11 +1,12 @@
 import React from "react";
+import './Supplier.css'
 
 const Supplier = ({supplier}) => {
-  const {id_supplier, supplier_name,cif,adress}= supplier
-  return <div>
+  const {supplier_name,cif,adress}= supplier
+  return <div className="supplier">
     <h3>{supplier_name}</h3>
-    <p>Dirección: {adress}</p>
-    <p>CIF {cif}</p>  
+    <p><b>Dirección:</b> {adress}</p>
+    <p><b>CIF:</b> {cif}</p>  
   </div>;
 };
 

@@ -3,6 +3,7 @@ import { productContext } from "../../context/productContext";
 import { suppliersContext } from "../../context/suppliersContext";
 import Item from "../Item/Item";
 import Supplier from "../Supplier/Supplier";
+import './Item_info.css'
 
 
 const Item_info = ({id_item}) => {  
@@ -19,7 +20,7 @@ const Item_info = ({id_item}) => {
   }, [item])
 
 
-  return <div>
+  return <div id="item_info">
     <h2>Producto</h2>
     {item?<Item data={item}/>:null}
     <h2>Proveedor</h2>

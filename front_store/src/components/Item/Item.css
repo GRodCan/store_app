@@ -1,0 +1,13 @@
+.item_card{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(153, 205, 50, 0.568);
+    width: 300px;
+    border:solid;
+    border-width:1px;
+    border-radius:5px;
+    text-align: center;
+    padding: 0px 10px 0px 5px;
+    margin: 5px 0 5px 40px;    
+}

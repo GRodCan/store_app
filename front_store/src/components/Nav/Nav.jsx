@@ -34,7 +34,7 @@ const Ul = styled.ul`
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
     margin-right:0px;
     top: 10;
-    right: 0;
+    right: 20px;
     height: 100vh;
     width: 225px;
     padding-top: 1rem;
@@ -48,9 +48,8 @@ const Ul = styled.ul`
 
 const Nav = ({ open }) => {
   return (
-    <Ul open={open}>
-      <Link to="/" className='link'><li>Inicio</li></Link>
-      <Link to="/products" className='link'><li>Catálogo</li></Link>
+    <Ul open={open}>      
+      <Link to="/" className='link'><li>Catálogo</li></Link>
       <Link to="/cart" className='link'><li>Carrito</li></Link>
       <Link to="/suppliers" className='link'><li>Marcas que trabajan con nosotros</li></Link>
     </Ul>
